@@ -1,0 +1,36 @@
+from operator import contains
+
+
+print("Escolha o operador: ")
+print("a) Soma")
+print("b) Subtração")
+print("c) Multiplicação")
+print("d) Divisão")
+print("e) Resto da divisão")
+
+
+a = input("Digite a letra corresponde a operação desejada: ")
+
+if a == "a":
+	x = float(input("digite o valor de x: "))
+	y = float(input("digite o valor de y: "))
+	print("Resultado: ", x+y)
+
+elif a == "b":
+	x = float(input("digite o valor de x (x-y): "))
+	y = float(input("digite o valor de y (x-y): "))
+	print("Resultado: ", x - y)
+elif a == "c":
+	x = float(input("digite o valor de x (x*y): "))
+	y = float(input("digite o valor de y (x*y): "))
+	print("Resultado: ", x * y)
+elif a == "d":
+	x = float(input("digite o valor de x (x/y): "))
+	y = float(input("digite o valor de y (x/y): "))
+	print("Resultado: ", x / y)
+elif a == "e":
+	x = float(input("digite o valor de x (x/y): "))
+	y = float(input("digite o valor de y (x/y): "))
+	print("O resta da divisão entre ", x , " e " , y , " é: ",  x%y)
+else :
+	print("Operador inválido!")
