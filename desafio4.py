@@ -24,4 +24,5 @@ elif combustivel == 2:
     else:
         print("Quantidade invalida!")
 else:
-    print("Valor incorreto!")
+    print("Valor errado!")
+#test
